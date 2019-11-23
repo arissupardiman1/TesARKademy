@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat JSON untuk REST API</title>
+</head>
+<body id="biodata">
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	// Isi dari Variabel data untuk dipanggil
+	var data = { 
+
+
+		name : "Aris Supardiman",
+		age :  "22",
+		address : "Sunter, Jakarta Utara",
+		hobbies : ['Berenang', 'Bermain Games', 'menonton film'],
+		is_married : false,
+
+		//Array of Obj
+		list_school : [
+						{
+							sch_name : "SDN Sumur batu 08",
+							year_in : "2003",
+							year_out: "2019",
+							major : null
+						},
+						{
+							sch_name : "SMP Negeri 59 Jakarta",
+							year_in : "2009",
+							year_out: "2012",
+							major : null
+						},
+						{
+							sch_name : "SMKN 1 Jakarta",
+							year_in : "2012",
+							year_out : "2015",
+							major : "TKJ"
+						}
+						{
+							sch_name : "Universitas Gunadarma",
+							year_in : "2015",
+							year_out: "2019",
+							major : "Teknik Informatika"
+						},
+					],
+
+		skills : [
+					{ 
+						skill_name : "Networking", 
+						level : "Advance" 
+					},
+					{ 
+						skill_name : "php native", 
+						level : "Advance" 
+					},
+					{ 
+						skill_name : "Java Script", 
+						level : "Beginner" 
+					},
+					{ 
+						skill_name : "react native", 
+						level : "Advance" 
+					},
+					{ 
+						skill_name : "java", 
+						level : "Adcanve" 
+					},
+					{ 
+						skill_name : "C", 
+						level : "Beginner" 
+					},
+				]
+	// End Array Of Obj
+
+	}
+
+	//mengambil id dari html lalu, mengubah javascript object menjadi string json
+	document.getElementById("biodata").innerHTML = JSON.stringify(data);
+	console.log(JSON.stringify(data));
+</script>
