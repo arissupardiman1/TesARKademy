@@ -1,3 +1,5 @@
+<?php include("konek.php"); ?>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -34,8 +36,8 @@
                 <select class="form-control" id="exampleFormControlSelect1">
                         <option>Raisa Andriana</option>
                         <option>Pevita Pearce</option>
-                        <option>Mochamad Sofyan</option>
-                        <option>Joko Susilo</option>
+                        <option>Aris Supardiman</option>
+                        <option>Supardiman Aris</option>
                       </select> </div>
           <div class="form-group">
             <select class="form-control" id="exampleFormControlSelect1">
